@@ -2,7 +2,7 @@ import qrcode
 
 def generate_qr(text: str, path='qr_code.png'):
   # TODO: crear QR code
-  qr = qrcode.QRCode(version=1, box_size=10, border=5)
+  qr = qrcode.QRCode(version=1, box_size=10, border=1)
   qr.add_data(text)
   qr.make(fit=True)
 
